@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechJo – Controle Biológico Inteligente</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&displa
+y=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+body {
+font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
+}
+.hero-bg {
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80%27');
+background-size: cover;
+background-position: center;
+}
+.feature-icon {
+width: 60px;
+height: 60px;
+display: flex;
+
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+margin: 0 auto 15px;
+}
+.how-it-works-step {
+position: relative;
+padding-left: 80px;
+margin-bottom: 40px;
+}
+.step-number {
+position: absolute;
+left: 0;
+top: 0;
+width: 60px;
+height: 60px;
+background-color: #D32F2F;
+color: white;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+font-weight: bold;
+}
+.calculator-input {
+
+border: 1px solid #e2e8f0;
+border-radius: 0.375rem;
+padding: 0.5rem 0.75rem;
+width: 100%;
+}
+.calculator-input:focus {
+outline: none;
+border-color: #4CAF50;
+box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+</style>
+</head>
+<body class="bg-gray-50">
+
+<!-- Navigation -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<div class="w-12 h-12 mr-3">
+<img src="https://i.postimg.cc/SQ5Dz9hh/Whats-App-Image-2025-08-01-at-21-47-55.jpg"
+alt="Logotipo TechJo" class="w-full h-full object-contain">
+
+</div>
+<a href="#" class="text-2xl font-bold text-gray-800">TechJo</a>
+</div>
+
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="text-gray-800 hover:text-green-500">Home</a>
+<a href="#about" class="text-gray-800 hover:text-green-500">Sobre</a>
+<a href="#how-it-works" class="text-gray-800 hover:text-green-500">Como
+Funciona</a>
+<a href="#science" class="text-gray-800 hover:text-green-500">Base
+Científica</a>
+<a href="#community" class="text-gray-800
+hover:text-green-500">Comunidade</a>
+<a href="#contact" class="text-gray-800 hover:text-green-500">Contato</a>
+</div>
+<button class="md:hidden text-gray-800 focus:outline-none">
+<i class="fas fa-bars text-xl"></i>
+</button>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-bg text-white py-20 md:py-32">
+<div class="container mx-auto px-4 text-center">
+<h1 class="text-4xl md:text-6xl font-bold mb-4">TechJo</h1>
+<h2 class="text-xl md:text-2xl mb-8">Controle Biológico: aplicação inteligente</h2>
+<p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto">Tecnologia sustentável para
+proteger sua lavoura de forma natural</p>
+<a href="#how-it-works" class="bg-red-600 hover:bg-red-700 text-white font-bold
+py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Saiba como funciona</a>
+</div>
+</section>
+<div class="flex items-center my-12">
+
+<div class="flex-grow h-px bg-green-300"></div>
+<span class="mx-4 text-green-600 text-2xl">🌿</span>
+<div class="flex-grow h-px bg-green-300"></div>
+</div>
+
+<!-- About Section (Aprimorada) -->
+<section id="about" class="py-20 bg-gradient-to-br from-green-50 via-white to-green-100">
+<div class="container mx-auto px-6">
+<div class="text-center mb-14">
+<h2 class="text-4xl font-extrabold text-green-700 mb-3 drop-shadow-md">Sobre o
+TechJo</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto
+rounded-full"></div>
+</div>
+
+<div class="flex flex-col md:flex-row items-center gap-10">
+<!-- Imagem -->
+<div class="md:w-1/2">
+<img
+
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAMPluwdP8sr8HUbjljxKkw
+uQFSFZ2VeJmpA&s"
+alt="TechJo imagem"
+class="rounded-xl shadow-lg border-4 border-green-200 w-full max-w-[520px] mx-auto"
+/>
+
+</div>
+
+<!-- Texto -->
+<div class="md:w-1/2">
+<p class="text-green-800 text-lg leading-relaxed mb-6">
+<strong>TechJo</strong> é um aplicativo inovador focado em promover uma
+agricultura mais sustentável e conectada.
+Ele une produtores orgânicos através de uma comunidade interativa e inteligente.
+</p>
+<p class="text-green-800 text-lg leading-relaxed mb-8">
+A partir das informações fornecidas pelo agricultor, o sistema calcula
+automaticamente a quantidade ideal de inimigos naturais, como joaninhas, e gera um plano
+personalizado com rota para drones, usando georreferenciamento.
+</p>
+
+<!-- Destaques -->
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-xl
+transition">
+<div class="mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full
+bg-gradient-to-br from-green-300 to-green-500 text-white">
+<i class="fas fa-leaf text-xl"></i>
+</div>
+<h3 class="font-semibold text-green-700">Sustentável</h3>
+<p class="text-sm text-green-800">Solução ecológica no combate às pragas</p>
+</div>
+
+<div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-xl
+transition">
+
+<div class="mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full
+bg-gradient-to-br from-red-300 to-red-500 text-white">
+<i class="fas fa-flask text-xl"></i>
+</div>
+<h3 class="font-semibold text-red-700">Base Científica</h3>
+<p class="text-sm text-red-800">Fundamentado em estudos confiáveis</p>
+</div>
+
+<div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-xl
+transition">
+<div class="mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full
+bg-gradient-to-br from-yellow-300 to-yellow-500 text-white">
+<i class="fas fa-robot text-xl"></i>
+</div>
+<h3 class="font-semibold text-yellow-700">Automatizado</h3>
+<p class="text-sm text-yellow-800">Cálculos inteligentes e eficientes</p>
+</div>
+
+<div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-xl
+transition">
+<div class="mx-auto mb-3 w-12 h-12 flex items-center justify-center rounded-full
+bg-gradient-to-br from-blue-300 to-blue-500 text-white">
+<i class="fas fa-drone-alt text-xl"></i>
+</div>
+<h3 class="font-semibold text-blue-700">Drones</h3>
+<p class="text-sm text-blue-800">Aplicação de precisão na lavoura</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<div class="flex items-center my-12">
+<div class="flex-grow h-px bg-green-300"></div>
+<span class="mx-4 text-green-600 text-2xl">🌿</span>
+<div class="flex-grow h-px bg-green-300"></div>
+</div>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="py-20 bg-gradient-to-b from-green-50 to-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold text-green-700 mb-4">Como Funciona</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Do campo à solução — conheça as etapas
+do nosso sistema inteligente de controle biológico.</p>
+<div class="w-24 h-1 bg-green-500 mx-auto mt-4"></div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+<!-- Step 1 -->
+<div class="flex items-start space-x-4">
+<div class="text-white bg-green-500 w-10 h-10 rounded-full flex items-center
+justify-center text-lg font-bold shadow-lg">1</div>
+<div>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Entrada de Dados</h3>
+
+<p class="text-gray-600">O agricultor insere as informações sobre a praga, cultura e
+localização via GPS usando uma interface amigável.</p>
+</div>
+</div>
+
+<!-- Step 2 -->
+<div class="flex items-start space-x-4">
+<div class="text-white bg-green-500 w-10 h-10 rounded-full flex items-center
+justify-center text-lg font-bold shadow-lg">2</div>
+<div>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Cálculo Inteligente</h3>
+<p class="text-gray-600">O sistema analisa os dados e calcula automaticamente a
+quantidade ideal de joaninhas com base em pesquisas científicas.</p>
+</div>
+</div>
+
+<!-- Step 3 -->
+<div class="flex items-start space-x-4">
+<div class="text-white bg-green-500 w-10 h-10 rounded-full flex items-center
+justify-center text-lg font-bold shadow-lg">3</div>
+<div>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Geração de Rota</h3>
+<p class="text-gray-600">Criamos uma rota otimizada para os drones aplicarem o
+controle biológico nos pontos estratégicos da lavoura.</p>
+</div>
+</div>
+
+<!-- Step 4 -->
+<div class="flex items-start space-x-4">
+
+<div class="text-white bg-green-500 w-10 h-10 rounded-full flex items-center
+justify-center text-lg font-bold shadow-lg">4</div>
+<div>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Aplicação Prática</h3>
+<p class="text-gray-600">Drones liberam as cápsulas com insetos benéficos de forma
+precisa, promovendo um controle sustentável e eficiente.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="flex items-center my-12">
+<div class="flex-grow h-px bg-green-300"></div>
+<span class="mx-4 text-green-600 text-2xl">🌿</span>
+<div class="flex-grow h-px bg-green-300"></div>
+</div>
+
+<!-- Calculator Section -->
+<div class="mt-16 bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
+<h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Simulador de Controle
+Biológico</h3>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-gray-700 mb-2">Tipo de Cultura</label>
+<select class="calculator-input" id="cultura">
+<option>Feijão</option>
+
+<option>Milho</option>
+<option>Soja</option>
+<option>Tomate</option>
+<option>Outra</option>
+</select>
+</div>
+<div>
+<label class="block text-gray-700 mb-2">Tipo de Praga</label>
+<select class="calculator-input" id="praga">
+<option>Pulgões</option>
+<option>Mosca-branca</option>
+<option>Tripes</option>
+<option>Outra</option>
+</select>
+</div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-gray-700 mb-2">Densidade de Pragas (unidades/m2)</label>
+<input type="number" class="calculator-input" id="densidade" placeholder="Ex: 50">
+</div>
+<div>
+<label class="block text-gray-700 mb-2">Área Total (hectares)</label>
+<input type="number" class="calculator-input" id="area" placeholder="Ex: 10">
+</div>
+
+</div>
+
+<div class="mb-6">
+<label class="block text-gray-700 mb-2">Tempo Desejado para Controle (dias)</label>
+<input type="number" class="calculator-input" id="tempo" placeholder="Ex: 7">
+</div>
+
+<button onclick="calcularJoaninhas()" class="w-full bg-green-500 hover:bg-green-600
+text-white font-bold py-3 px-4 rounded transition duration-300">
+Calcular Quantidade de Joaninhas
+</button>
+
+<div class="mt-6 p-4 bg-gray-100 rounded hidden" id="result">
+<h4 class="font-bold text-gray-800 mb-2">Resultado:</h4>
+<p class="text-gray-700">Quantidade estimada de joaninhas: <span class="font-bold
+text-green-600" id="ladybugs-count">0</span></p>
+<p class="text-gray-700 text-sm mt-2">* Esta estimativa é baseada em pesquisas
+científicas e pode variar conforme condições ambientais.</p>
+</div>
+
+<p class="text-gray-600 text-sm mt-6">
+O TechJo pode ser adaptado para diferentes culturas (milho, feijão, soja, tomate etc.) e
+pragas (pulgões, mosca-branca, tripes etc.), desde que existam dados de eficácia dos
+inimigos naturais correspondentes.
+</p>
+</div>
+<section id="geo-map" class="py-16 bg-green-100">
+<div class="container mx-auto px-4">
+
+<h2 class="text-3xl font-bold text-center text-green-800 mb-6">Distribuição Estratégica de
+Joaninhas</h2>
+<p class="text-center text-gray-700 mb-10">Baseado nos dados informados, veja os
+pontos simulados da propriedade onde as cápsulas serão lançadas.</p>
+<div id="map-grid" class="grid grid-cols-5 gap-4 justify-center text-center"></div>
+</div>
+</section>
+<section class="py-8 bg-white">
+<div class="container mx-auto px-4">
+<h3 class="text-2xl font-bold text-center text-gray-800 mb-4">Mapa da Propriedade</h3>
+<p class="text-center text-gray-600 mb-6">Demonstração da área com os pontos
+simulados de liberação das joaninhas.</p>
+<div class="flex justify-center">
+<canvas id="propertyMap" width="500" height="400" class="border border-gray-300
+rounded-lg shadow-md"></canvas>
+</div>
+</div>
+</section>
+
+<script>
+const canvas = document.getElementById("propertyMap");
+const ctx = canvas.getContext("2d");
+
+// Desenhar a área da propriedade (simples retângulo verde claro)
+ctx.fillStyle = "#e6f5e9";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+// Adiciona pontos simulados de liberação
+
+const points = [
+{ x: 80, y: 60 },
+{ x: 200, y: 100 },
+{ x: 350, y: 90 },
+{ x: 120, y: 200 },
+{ x: 280, y: 180 },
+{ x: 400, y: 250 },
+{ x: 150, y: 300 },
+{ x: 300, y: 330 },
+];
+
+ctx.fillStyle = "#38a169"; // cor verde escura para os pontos
+points.forEach((point) => {
+ctx.beginPath();
+ctx.arc(point.x, point.y, 8, 0, Math.PI * 2);
+ctx.fill();
+});
+
+// Opcional: legenda
+ctx.fillStyle = "#000";
+ctx.font = "14px sans-serif";
+ctx.fillText("● Ponto de Liberação", 20, canvas.height - 20);
+</script>
+
+<div class="flex items-center my-12">
+<div class="flex-grow h-px bg-green-300"></div>
+<span class="mx-4 text-green-600 text-2xl">🌿</span>
+<div class="flex-grow h-px bg-green-300"></div>
+</div>
+
+<!-- Community Section -->
+<section id="community" class="py-16 bg-green-600 text-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">AgroChat TechJo</h2>
+<div class="w-20 h-1 bg-white mx-auto"></div>
+</div>
+
+<div class="max-w-6xl mx-auto">
+<div class="bg-white text-gray-800 rounded-lg shadow-xl overflow-hidden flex
+flex-col md:flex-row">
+
+<!-- Texto e recursos -->
+<div class="md:w-1/2 p-8">
+<h3 class="text-2xl font-bold text-green-700 mb-4">Comunidade
+
+AgroChat</h3>
+
+<p class="text-gray-700 mb-4">O TechJo vai além da tecnologia: oferece
+também a AgroChat, uma comunidade colaborativa que conecta produtores, pesquisadores
+e consumidores interessados em agricultura sustentável.</p>
+
+<p class="text-gray-700 mb-6">Troque experiências, tire dúvidas, compartilhe
+resultados e forme redes de apoio com outros membros da comunidade agrícola.</p>
+
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="bg-green-100 text-green-600 p-3 rounded-full mr-4">
+<i class="fas fa-comments text-lg"></i>
+</div>
+<p class="text-gray-700">Fórum direto entre produtores e
+
+consumidores</p>
+</div>
+<div class="flex items-start">
+<div class="bg-green-100 text-green-600 p-3 rounded-full mr-4">
+<i class="fas fa-star text-lg"></i>
+</div>
+<p class="text-gray-700">Valorização do produto orgânico</p>
+</div>
+<div class="flex items-start">
+<div class="bg-green-100 text-green-600 p-3 rounded-full mr-4">
+<i class="fas fa-hands-helping text-lg"></i>
+</div>
+<p class="text-gray-700">Troca de boas práticas e saberes do campo</p>
+</div>
+</div>
+</div>
+
+<!-- Caixa de convite -->
+<div class="md:w-1/2 bg-gray-100 p-8 flex items-center justify-center">
+<div class="text-center w-full">
+<div class="bg-white p-6 rounded-lg shadow-inner mb-6">
+
+<i class="fas fa-comment-dots text-5xl text-green-600 mb-4"></i>
+<h4 class="text-xl font-bold text-gray-800 mb-2">Junte-se à
+
+Comunidade</h4>
+
+<p class="text-gray-600 mb-2">Conecte-se com outros produtores e
+
+especialistas em controle biológico.</p>
+
+</div>
+<<a href="https://chat.whatsapp.com/IvEHN5YxrhYJ4eTTqXH3lS?mode=ac_t"
+
+target="_blank"
+rel="noopener"
+class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded transition
+duration-300">
+Acessar AgroChat
+</a>
+
+</a>
+
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="flex items-center my-12">
+<div class="flex-grow h-px bg-green-300"></div>
+<span class="mx-4 text-green-600 text-2xl">🌿</span>
+<div class="flex-grow h-px bg-green-300"></div>
+</div>
+
+<!-- Team Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Criadoras do Projeto</h2>
+<div class="w-20 h-1 bg-green-500 mx-auto"></div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+<!-- Ana Clara - Azul -->
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="w-24 h-24 bg-blue-100 rounded-full mx-auto mb-4 flex items-center
+
+justify-center">
+
+<i class="fas fa-user text-3xl text-blue-600"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-1">Ana Clara Tenedini</h3>
+<p class="text-gray-600 mb-3">(55) 9 9629-3852</p>
+<a href="mailto:at004570@cfjl.com.br" class="text-blue-600 hover:text-blue-800
+text-sm">at004570@cfjl.com.br</a>
+</div>
+
+<!-- Bruna - Roxo -->
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="w-24 h-24 bg-purple-100 rounded-full mx-auto mb-4 flex items-center
+
+justify-center">
+
+<i class="fas fa-user text-3xl text-purple-600"></i>
+
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-1">Bruna Reckziegel Binsfeld</h3>
+<p class="text-gray-600 mb-3">(55) 9 9626-9010</p>
+<a href="mailto:bb004475@cfjl.com.br" class="text-purple-600
+hover:text-purple-800 text-sm">bb004475@cfjl.com.br</a>
+</div>
+
+<!-- Isadora - Rosa -->
+<div class="bg-white p-6 rounded-lg shadow-md text-center">
+<div class="w-24 h-24 bg-pink-100 rounded-full mx-auto mb-4 flex items-center
+
+justify-center">
+
+<i class="fas fa-user text-3xl text-pink-600"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-1">Isadora Helena Cabral
+Salanti</h3>
+<p class="text-gray-600 mb-3">(55) 9 9119-1726</p>
+<a href="mailto:is004392@cfjl.com.br" class="text-pink-600 hover:text-pink-800
+text-sm">is004392@cfjl.com.br</a>
+</div>
+</div>
+</div>
+</section>
+<div class="flex items-center my-12">
+<div class="flex-grow h-px bg-green-300"></div>
+<span class="mx-4 text-green-600 text-2xl">🌿</span>
+<div class="flex-grow h-px bg-green-300"></div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Contato / Colaboração</h2>
+<div class="w-20 h-1 bg-green-500 mx-auto"></div>
+</div>
+
+<div class="max-w-2xl mx-auto">
+<form class="bg-gray-50 p-8 rounded-lg shadow-md">
+<div class="mb-6">
+<label class="block text-gray-700 mb-2">Nome</label>
+<input type="text" class="calculator-input" placeholder="Seu nome
+
+completo">
+</div>
+
+<div class="mb-6">
+<label class="block text-gray-700 mb-2">E-mail</label>
+<input type="email" class="calculator-input" placeholder="seu@email.com">
+</div>
+
+<div class="mb-6">
+<label class="block text-gray-700 mb-2">Tipo de Usuário</label>
+<select class="calculator-input">
+<option>Agricultor</option>
+<option>Pesquisador</option>
+
+<option>Investidor</option>
+<option>Outro</option>
+</select>
+</div>
+
+<div class="mb-6">
+<label class="block text-gray-700 mb-2">Mensagem</label>
+<textarea class="calculator-input" rows="4" placeholder="Como podemos te
+
+ajudar?"></textarea>
+</div>
+
+<button class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3
+
+px-4 rounded transition duration-300">
+Quero Participar
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-green-100 text-green-900 py-8">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center">
+
+<!-- Logo e texto -->
+<div class="mb-6 md:mb-0 max-w-sm">
+<div class="flex items-center">
+
+<div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center mr-3">
+<img
+src="https://i.postimg.cc/SQ5Dz9hh/Whats-App-Image-2025-08-01-at-21-47-55.jpg"
+alt="Logo TechJo" class="w-full h-full object-cover">
+</div>
+<span class="text-xl font-bold">TechJo</span>
+</div>
+<p class="text-green-700 text-sm mt-2">
+Controle biológico inteligente para uma agricultura sustentável.
+</p>
+</div>
+
+<!-- Contatos com ícones e texto -->
+<div class="flex flex-col space-y-3 mb-6 md:mb-0 text-green-800 text-sm font-medium">
+<a href="mailto:equipetechjo@gmail.com" class="flex items-center space-x-2
+hover:text-red-600 transition-colors">
+<i class="fas fa-envelope text-red-600"></i>
+<span>equipetechjo@gmail.com</span>
+</a>
+<a href="https://instagram.com/_techjo" target="_blank" rel="noopener" class="flex
+items-center space-x-2 hover:text-red-600 transition-colors">
+<i class="fab fa-instagram text-red-600"></i>
+<span>@_techjo</span>
+</a>
+</div>
+
+<!-- Créditos -->
+<div class="text-center md:text-right text-green-700 text-sm max-w-xs">
+
+<p>Desenvolvido por alunos do</p>
+<p class="font-semibold">CFJL – Colégio Frederico Jorge Logemann</p>
+<p class="mt-2 text-xs">&copy; 2023 TechJo. Todos os direitos reservados.</p>
+</div>
+
+</div>
+</div>
+</footer>
+<script>
+function gerarMapaDistribuicao(qtdJoaninhas, hectares) {
+const totalBlocos = 25;
+const mapGrid = document.getElementById('map-grid');
+mapGrid.innerHTML = '';
+
+const blocosPorHectare = Math.ceil(totalBlocos / hectares);
+const joaninhasPorBloco = Math.floor(qtdJoaninhas / (hectares * blocosPorHectare));
+
+for (let i = 1; i <= totalBlocos; i++) {
+const bloco = document.createElement('div');
+bloco.className = "bg-white rounded shadow p-4 border min-w-[60px]";
+const joaninhasNesteBloco = i <= hectares * blocosPorHectare ? joaninhasPorBloco : 0;
+bloco.innerHTML = `<strong>P${i}</strong><br>Joaninhas: ${joaninhasNesteBloco}`;
+mapGrid.appendChild(bloco);
+}
+}
+
+function calcularJoaninhas() {
+const pestDensity = parseFloat(document.getElementById('densidade').value);
+const totalArea = parseFloat(document.getElementById('area').value);
+const desiredTime = parseFloat(document.getElementById('tempo').value);
+
+if (isNaN(pestDensity) || pestDensity <= 0) {
+alert('Por favor, informe uma densidade de pragas válida (maior que zero).');
+return;
+}
+if (isNaN(totalArea) || totalArea <= 0) {
+alert('Por favor, informe uma área total válida (maior que zero).');
+return;
+}
+if (isNaN(desiredTime) || desiredTime <= 0) {
+alert('Por favor, informe um tempo desejado válido (maior que zero).');
+return;
+}
+
+const predationCapacity = 50;
+const totalAreaM2 = totalArea * 10000;
+
+const ladybugsCount = Math.ceil((pestDensity * totalAreaM2) / (predationCapacity *
+desiredTime));
+gerarMapaDistribuicao(ladybugsCount, totalArea);
+
+document.getElementById('ladybugs-count').textContent =
+ladybugsCount.toLocaleString('pt-BR');
+
+document.getElementById('result').classList.remove('hidden');
+document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
+}
+
+</script>
